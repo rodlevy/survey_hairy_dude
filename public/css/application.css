@@ -73,13 +73,9 @@ nav a{
 h1, h2 {
   color: #31100D;
   /*text-align: center;*/
-  font-family: 'Carter One', sans-serif;
   /*font-family: Helvetica, Arial, sans-serif;*/
 }
 
-h3 {
-  font-family: Helvetica, Arial, sans-serif;
-}
 /*body, select, input, textarea {  
     color: #444;  
     font-family: Helvetica, Arial, sans-serif; 
