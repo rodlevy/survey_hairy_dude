@@ -49,6 +49,8 @@ $(document).ready(function(){
 				window.location.href='/'	
 			})
 		})
-	
-
+	$('.button').click(function(event){
+		// event.preventDefault()
+		// $('input[name=question_id_15]:checked').remove();
+	})
 });

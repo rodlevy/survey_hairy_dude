@@ -46,5 +46,6 @@ get '/take/:survey_id' do
 end
 
 post '/take/:survey_id' do
-  
+  p params
+  redirect '/take/5'
 end
