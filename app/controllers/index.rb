@@ -37,6 +37,11 @@ get '/history' do
   end
 end
 
+get '/results/:survey_id' do
+  @survey = Survey.find(params[:survey_id])
+  erb :results
+end
+
 get '/take/:survey_id' do
   if @survey = Survey.find(params[:survey_id])
     erb :take
