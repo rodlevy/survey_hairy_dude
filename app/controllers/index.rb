@@ -12,11 +12,16 @@ get '/create' do
 end
 
 post '/create' do
-  #to test when form is ready
-  # test = JSON.generate(params[:results])
-  p (params[:results])
+
   # survey = Survey.create(:name => params[:survey_name],
   #                         :user_id => current_user.id)
+  p params[:title]
+  
+
+  params[:results].values.each do |v|
+   p v
+  end
+  
   # results.each do |result|
   #   question = Question.create(content: result[:question],
   #                              survey_id: survey.id)
