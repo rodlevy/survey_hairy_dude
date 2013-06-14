@@ -31,7 +31,7 @@ $(document).ready(function(){
 			$('.question-shell').append("<div class='question-container'><input type='text' class='question' placeholder='question'><div class='answer-shell'><div class='answer-container'><input type='text' class='answer' placeholder='answer'></div></div><button class='add-answer'>Add Answer</button></div>")
 		});
 		$('.question-shell').on('click', '.add-answer', function(){
-			$(this).before("<input type='text' class='answer' placeholder='answer'>");
+			$(this).before("<input type='text' class='answer' placeholder='answer'><br>");
 		} );
 		$('.submit').on('click', function(){
 			$('.question-container').each(function(){
