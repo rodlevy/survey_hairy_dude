@@ -17,6 +17,25 @@ nav {
   height: 46px;
   color: #F7D9CC;
 }
+.home_surveys_containers{
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+  float: left;
+  position: relative;
+  margin: 10px;
+}
+.home_surveys_containers img{
+  width: 60px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+.home_surveys_containers p{
+  font-size: 25px;
+  padding: 10px;
+  color: #31100D;
+}
 .question-shell input{
   margin-bottom: 20px;
 }
