@@ -26,25 +26,26 @@
 // 	});
 
 $(document).ready(function(){
-		var result =[]
+		var result =[];
 		$('.add-question').click(function(){
 			$('.question-shell').append("<div class='question-container'><input type='text' class='question' placeholder='question'><div class='answer-shell'><div class='answer-container'><input type='text' class='answer' placeholder='answer'></div></div><button class='add-answer'>Add Answer</button></div>")
-		})
+		});
 		$('.question-shell').on('click', '.add-answer', function(){
-			$(this).before("<input type='text' class='answer' placeholder='answer'>")
+			$(this).before("<input type='text' class='answer' placeholder='answer'>");
 		} );
 		$('.submit').on('click', function(){
 			$('.question-container').each(function(){
-				var current_question = {}
-				var current_answers = []
-				current_question['question'] = $(this).find('.question').val()
+				var current_question = {};
+				var current_answers = [];
+				current_question['question'] = $(this).find('.question').val();
 				$(this).find('.answer').each(function(){
-					current_answers.push($(this).val())
-				})
-				current_question['answers'] = current_answers
+					current_answers.push($(this).val());
+				});
+				current_question['answers'] = current_answers;
 				result.push(current_question);
 			})
-			$.post('/create',{results: result}, "json")
+			title = $('.survey-title').val();
+			$.post('/create',{results: result, title: title})
 		})
 	
 
