@@ -1,20 +1,18 @@
 <h1>Create Survey</h1>
 
-<ul class="questions">
-  <li class="question">
-    <form action="/create" method="post"></form>
-    <ul class="answers">
-      <li class="answer"></li>
-    </ul>
 
-  </li>
-</ul>
+<div class='question-shell'>
+  <div class="question-container">
+    <input type='text' class='question' placeholder='question'>
+    <div class='answer-shell'>
+      <div class='answer-container'>
+        <input type='text' class='answer' placeholder='answer'>
+      </div>
+    </div>
+    <button class='add-answer'>Add Answer</button>
+  </div>
 
-<div class="question-form">
-  <form action="/create" method="post">
-    <input class="Q" type="text" name="">
-    <input class="A" type="text" name="">
-    <input class="A" type="text" name="">
-  </form>
 </div>
+<button class='add-question'>Add Question</button>
+<button class='submit'>Submit Survey</button>
 
