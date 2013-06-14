@@ -20,21 +20,24 @@
 <body>
 
 <nav>
- <div class='header'>
-  <div id='nav'>
-    <a href='/'>Home</a>
-    <%if current_user%>
-    <a>Welcome <%=current_user.first_name%></a>
-    <a href='/logout'>Logout</a>
-    
-    <%else%>
-    <a id='login-hook' href='/login'>Login</a>
-    <a id='create-hook' href='/create_user'>Create New Account</a>
-
-    <%end%>
+  <div id="title">
+    <a href="/">survey bear</a>
   </div>
- </div>
+  <div id="nav-links">
+    <% unless current_user %>
+
+    <div><a href="/create_user">Sign Up</a></div>
+    <div><a href="/login">Login</a></div>
+    <% end %>
+    <% if current_user %>
+    <div><a href="/create">Create Survey</a></div>
+    <div><a href="/history/<%= current_user.id %>">History</a></div>
+    <div><a href="/logout">Logout</a></div>
+    <% end %>
+  </div>
 </nav>
+
+
   <div class="container">
     <%= yield %>
   </div>
