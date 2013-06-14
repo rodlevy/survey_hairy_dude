@@ -62,7 +62,8 @@ audio:not([controls]) {
  */
 
 html {
-    font-family: sans-serif; /* 1 */
+    font-family: 'Carter One', sans-serif;
+    /*font-family: sans-serif;*/ /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
     -ms-text-size-adjust: 100%; /* 2 */
 }

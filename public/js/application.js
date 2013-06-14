@@ -24,19 +24,5 @@ $(document).ready(function() {
 			$('.container').show();
 		});
 	});
-	// $('#create-hook').on('click', function(event){
-	// 	event.preventDefault();
-	// 	var url = $(this).attr('href');
-	// 	$.get(url, function(url_body){
-	// 		var form = $(url_body).find('#regular-create').html();
-	// 		$('#create-hook').closest('div').append(form);
-	// 	});
-	// });
-});
 
 
-
- // 1. ready
- // 2. bind event
- // 3. identify url and any vars you are going to pass
- // 4. get/post

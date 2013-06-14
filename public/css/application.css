@@ -4,10 +4,8 @@ body {
 
 .container {
   margin: 20px auto;
-  width: 50%;
-  background-color: lightblue;
+  width: 80%;
   padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
 }
 th {
   text-align: left;
@@ -72,11 +70,32 @@ nav a{
   color: #F7D9CC;
 }
 
+h1, h2 {
+  color: #31100D;
+  /*text-align: center;*/
+  font-family: 'Carter One', sans-serif;
+  /*font-family: Helvetica, Arial, sans-serif;*/
+}
+
+h3 {
+  font-family: Helvetica, Arial, sans-serif;
+}
 /*body, select, input, textarea {  
     color: #444;  
     font-family: Helvetica, Arial, sans-serif; 
     background-color: #E8E8E8;
 }  */
+
+form input{
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  width: 200px;
+}
+
+.button {
+  width: auto;
+}
 
 #submit_button {
   background-color: #FF9966;
@@ -96,14 +115,7 @@ img {
 }*/
 
 
-h1, h2 {
-  text-align: center;
-  font-family: Helvetica, Arial, sans-serif;
-}
 
-h3 {
-  font-family: Helvetica, Arial, sans-serif;
-}
 
 #click {
   font-size: 10px;
@@ -118,7 +130,7 @@ h3 {
 #gorilla {
   position: fixed;
   /*opacity: 0.75;*/
-  height: 300px;
+  height: 360px;
   bottom: 0;
   right: 0;
 }
