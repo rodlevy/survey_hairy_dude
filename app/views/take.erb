@@ -1,0 +1,21 @@
+<h1><%= @survey.name %></h1>
+
+<form action="/take/<%= @survey.id %>" method="post">
+
+<% @survey.questions.each do |question| %>
+
+<div class="question">
+  <div class="q-header">
+    <h3><%= question.content %></h3>
+  </div>
+  <div class="q-body">
+    <% question.answers.each do |answer| %>
+      <input class="radio" type="radio" name="<%= answer.question_id %>"><span class="q-answer"><%= answer.content %></span><br>
+    <% end %>
+  </div>
+</div>
+
+<% end %>
+
+<input id="q-button" class="button" type="submit" value="Submit Survey">
+</form>

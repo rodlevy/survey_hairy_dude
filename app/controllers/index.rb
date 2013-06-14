@@ -13,6 +13,7 @@ end
 
 post '/create' do
   #to test when form is ready
+  p params
   survey = Survey.create(:name => params[:survey_name],
                           :user_id => current_user.id)
   results.each do |result|
