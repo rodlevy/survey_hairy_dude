@@ -133,12 +133,26 @@ li {
   margin-top: 28px;
 }
 
+#results {
+  margin-bottom: -20px;
+}
+
+.results-question {
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.table-headers {
+  text-decoration: underline;
+}
+
 #gorilla {
   position: fixed;
   /*opacity: 0.25;*/
   height: 360px;
   bottom: 0;
   right: 0;
+  z-index: -0;
 }
 
 #gorilla2 {
@@ -147,4 +161,5 @@ li {
   height: 900px;
   bottom: 0;
   right: 0;
+  z-index: -1;
 };

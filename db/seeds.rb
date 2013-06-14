@@ -39,7 +39,7 @@ end
 
 
 users.each do |user|
-  3.times do 
+  20.times do 
     survey = surveys.sample
     survey.questions.each do |question|
       answer = question.answers.sample
