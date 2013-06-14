@@ -7,7 +7,7 @@ get '/create' do
   if !current_user
     redirect to '/'
   else
-    erb :test_jordan
+    erb :create
   end
 end
 
