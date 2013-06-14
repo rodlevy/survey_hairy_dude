@@ -18,6 +18,8 @@ gem 'bcrypt-ruby'
 
 gem 'shotgun'
 
+gem 'json'
+
 gem 'carrierwave'
 gem 'mini_magick'
 

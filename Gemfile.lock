@@ -25,6 +25,7 @@ GEM
     faker (1.1.2)
       i18n (~> 0.5)
     i18n (0.6.4)
+    json (1.8.0)
     mini_magick (3.6.0)
       subexec (~> 0.2.1)
     multi_json (1.7.6)
@@ -73,6 +74,7 @@ DEPENDENCIES
   bcrypt-ruby
   carrierwave
   faker
+  json
   mini_magick
   pg
   rake
