@@ -46,6 +46,7 @@ $(document).ready(function(){
 			})
 			title = $('.survey-title').val();
 			$.post('/create',{results: result, title: title})
+			window.location.href='/'
 		})
 	
 
