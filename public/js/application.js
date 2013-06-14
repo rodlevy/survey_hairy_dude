@@ -30,5 +30,5 @@ $(document).ready(function(){
 		$('.add-question').click(function(){
 			$('.question-shell').append("<div class='question-container'><input type='text' class='question' placeholder='question'><div class='answer-shell'><div class='answer-container'><input type='text' class='answer' placeholder='answer'></div></div><button class='add-answer'>Add Answer</button></div>")
 		})
-		$('.add-answer').on('click', )
+		$('.add-answer').on('click',  )
 });
