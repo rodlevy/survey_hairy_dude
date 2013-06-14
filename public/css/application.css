@@ -1,6 +1,11 @@
+body {
+  background-color: #B6DE40;
+}
+
 .container {
   margin: 20px auto;
-  width: 600px;
+  width: 90%;
+  background-color: lightblue;
   padding: 0px 20px 20px 20px;
   border: 1px dotted black;
 }
@@ -14,35 +19,23 @@ th {
 
 }
 
-.header #nav{
+/*.header #nav{
   position: relative;
   left: 100px;
   margin: 0;
+  background-color: red;
   padding-right: 50px;
-}
+}*/
 
 .header #nav a{
   padding-right: 25px;
 }
 
-body, select, input, textarea {  
+/*body, select, input, textarea {  
     color: #444;  
     font-family: Helvetica, Arial, sans-serif; 
     background-color: #E8E8E8;
-}  
-
-.container {
-  margin: 20px auto;
-  width: 700px;
-  padding: 0px 20px 20px 20px;
-  border: 2px solid orange;
-  background-color: skyblue;
-  border-radius: 20px;
-   
-}
-th {
-  text-align: left;
-}
+}  */
 
 #submit_button {
   background-color: #FF9966;
@@ -53,13 +46,13 @@ th {
 li {
   font-size: 12px;
 }
-
+/*
 img {
   display: block;
   margin-left:auto;
   margin-right:auto;
   border-radius: 15px;
-}
+}*/
 
 
 h1, h2 {
@@ -70,6 +63,7 @@ h1, h2 {
 h3 {
   font-family: Helvetica, Arial, sans-serif;
 }
+
 #click {
   font-size: 10px;
   font-style: italic;
@@ -79,3 +73,11 @@ h3 {
   background-color: gray;
   float: left;
 }*/
+
+#gorilla {
+  position: fixed;
+  /*opacity: 0.75;*/
+  height: 300px;
+  bottom: 0;
+  right: 0;
+}
