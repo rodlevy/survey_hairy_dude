@@ -12,25 +12,21 @@ get '/create' do
 end
 
 post '/create' do
+  survey = Survey.create(:name => params[:title],
+                          :user_id => current_user.id)
 
-  # survey = Survey.create(:name => params[:survey_name],
-  #                         :user_id => current_user.id)
-  p params[:title]
-  
+# {"question"=>"1", "answers"=>["a", "b"]}
 
   params[:results].values.each do |v|
-   p v
+    question = Question.create(content: v["question"],
+                               survey_id: survey.id)
+
+    v["answers"].each do |answer|
+      Answer.create(content: answer, question_id: question.id)
+    end
   end
   
-  # results.each do |result|
-  #   question = Question.create(content: result[:question],
-  #                              survey_id: survey.id)
-  #   results[:answers].each do |answer|
-  #     Answer.create(content: answer, question_id: question.id)
-  #   end
-  # end
-
-  # redirect to '/'
+  redirect to '/'
 end
 
 get '/history' do
