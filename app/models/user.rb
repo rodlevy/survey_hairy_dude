@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
 
   attr_reader :entered_password
 
-  validates :entered_password, :length => { :minimum => 6 }
+  # validates :entered_password, :length => { :minimum => 3 }
   validates :email, :uniqueness => true, :format => /.+@.+\..+/
 
   def self.authenticate(params)
@@ -29,5 +29,4 @@ class User < ActiveRecord::Base
     @user.save!
     @user
   end
-
 end
