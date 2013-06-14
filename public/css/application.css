@@ -140,3 +140,11 @@ li {
   bottom: 0;
   right: 0;
 }
+
+#gorilla2 {
+  position: fixed;
+  opacity: 0.06;
+  height: 900px;
+  bottom: 0;
+  right: 0;
+};

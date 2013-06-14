@@ -1,0 +1,28 @@
+get '/results/:survey_id' do
+  @survey = Survey.find(params[:survey_id])
+  erb :results
+end
+
+<h1><%= @survey.name %></h1>
+<h2>Results</h2>
+
+<table>
+<% @survey.questions.each do |question| %>
+  <tr><td><h3><%= question.content %></h3></td></tr>
+  <tr>
+    <td>Answer</td>
+    <td>Percent</td>
+    <td>Count</td>
+  </tr>
+
+  <% question.answers.each do |answer| %>
+  <tr>
+    <td><%= answer.content %></td>
+    <td><%= (answer.responses.count / question.responses.count.to_f).round(2) %>%</td>
+    <td><%= answer.responses.count %></td>
+  </tr>
+  <% end %>
+</table>
+
+
+<% end %>
