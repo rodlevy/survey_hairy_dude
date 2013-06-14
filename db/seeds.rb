@@ -1,12 +1,12 @@
 users = []
 
 users << User.create(username: "test", email: "test@test.com", 
-                     password_hash: BCrypt::Password.create("test"))
+                     password_hash: "test")
 
 10.times do
   users << User.create(:username => Faker::Internet.user_name,
               :email =>   Faker::Internet.email,
-              :password_hash  => BCrypt::Password.create("test"))
+              :password_hash  => "test")
 end
 
 surveys = []
@@ -39,7 +39,7 @@ end
 
 
 users.each do |user|
-  20.times do 
+  40.times do 
     survey = surveys.sample
     survey.questions.each do |question|
       answer = question.answers.sample
