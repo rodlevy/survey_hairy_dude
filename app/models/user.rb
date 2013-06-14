@@ -1,4 +1,7 @@
 class User < ActiveRecord::Base
+  has_many :surveys
+  has_many :responses
+
 
   attr_reader :entered_password
 
