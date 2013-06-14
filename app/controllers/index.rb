@@ -1,5 +1,5 @@
 get '/' do
-  # Look in app/views/index.erb
+  @top_surveys = Survey.order('created_at DESC').limit(6)
   erb :index
 end
 
@@ -50,7 +50,18 @@ get '/take/:survey_id' do
   end
 end
 
+get '/thanks' do
+  erb :thanks
+end
+
 post '/take/:survey_id' do
   p params
-  redirect '/take/5'
+  params.each_pair do |question_id, answer_id|
+    if question_id.match(/\d/)
+      Response.create(:user_id => current_user.id,
+                          :question_id => question_id,
+                          :answer_id  => answer_id)
+    end
+  end
+  redirect '/thanks'
 end

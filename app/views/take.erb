@@ -10,7 +10,7 @@
   </div>
   <div class="q-body">
     <% question.answers.each do |answer| %>
-      <input class="radio" type="radio" name="question_id_<%= answer.question_id %>" value="<%= answer.id %>"><span class="q-answer"><%= answer.content %></span><br>
+      <input class="radio" type="radio" name="<%= answer.question_id %>" value="<%= answer.id %>"><span class="q-answer"><%= answer.content %></span><br>
     <% end %>
   </div>
 </div>

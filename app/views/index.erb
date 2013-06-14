@@ -1,4 +1,12 @@
 <h1>Survey Bear</h1>
 
+<% @top_surveys.each do |survey| %>
+<a href="/take/<%= survey.id %>">
+  <div class="home_surveys_containers">
+    <p><%= survey.name %></p>
+    <img src="/images/gorilla.png">
+  </div>
+</a>
+<% end %>
 
 <!-- <img src="/images/gorilla.png"> -->
