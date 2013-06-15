@@ -13,10 +13,11 @@ Dir[APP_ROOT.join('app', 'models', '*.rb')].each do |model_file|
   autoload ActiveSupport::Inflector.camelize(filename), model_file
 end
 
-Dir[APP_ROOT.join('app', 'uploaders', '*.rb')].each do |uploader_file|
-  filename = File.basename(uploader_file).gsub('.rb', '')
-  autoload ActiveSupport::Inflector.camelize(filename), uploader_file
+Dir[APP_ROOT.join('app', 'uploaders', '*.rb')].each do |uploarder_file|
+  filename = File.basename(uploarder_file).gsub('.rb', '')
+  autoload ActiveSupport::Inflector.camelize(filename), uploarder_file
 end
+
 
 # We have to do this in case we have models that inherit from each other.
 # If model Student inherits from model Person and app/models/student.rb is
