@@ -65,3 +65,7 @@ post '/take/:survey_id' do
   end
   redirect '/thanks'
 end
+
+get '/charts' do
+  erb :charts
+end
